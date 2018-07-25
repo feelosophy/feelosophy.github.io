@@ -1,25 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/script.js"></script>
-  <title>Conway's Game of Life</title>
-</head>
-<body>
-	<h1>ИГРА "ЖИЗНЬ"</h1>
-	<form id = "myform">
-		<b>Вероятность</b>
-		<select size = "1" id = "prob">
-			<option value = "0.1">0.1</option>
-			<option value = "0.2">0.2</option>
-			<option value = "0.3">0.3</option>
-			<option value = "0.5">0.5</option>
-			<option value = "0.75">0.75</option>
-		
-		<input type = "button" id = "conf" value = "Новая конфигурация">
-		<input type = "button" id = "start">
-	</form>
-	<canvas id = "mycanvas"></canvas>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>feelosophy's Portfolio</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+					<h4>HELLO PEOPLE, MY NICKNAME IS</h4>
+					<h1><b>feelosophy</b></h1>
+					<h4>Developer</h4>
+				</div>
+			</div>
+	    </div>
+	</div>
+	
+	<section id="works"></section>
+	<div class="container">
+		<div class="row centered mt mb">
+			<h1>My Portfolio</h1>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="https://github.com/feelosophy/Alien_Invasion"><img src="assets/img/portfolio/spaceShip.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="#"><img src="assets/img/portfolio/tbd.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="#"><img src="assets/img/portfolio/tbd.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="#"><img src="assets/img/portfolio/tbd.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="#"><img src="assets/img/portfolio/tbd.png" class="img-responsive"></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="#"><img src="assets/img/portfolio/tbd.png" class="img-responsive"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-2">
+					<a href="https://vk.com/dmitryminaev"><i class="fa fa-vk"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://facebook.com/d.d.minaev"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://twitter.com/d_minaev"><i class="fa fa-twitter"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="https://github.com/feelosophy"><i class="fa fa-github"></i></a>
+				</div>
+				<div class="col-lg-2">
+					<a href="http://instagram.com/feel0s0phy"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-4">
+					<p>Template from <b>bayguzin.ru/main/shablonyi/web-dizajn-i-web-studii/instant.html</b></p>
+				</div>
+			
+				<div class="col-lg-4">
+					<p>Living in Moscow.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>easymp2@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.7/lib/draggable.js"></script>
+	<script>
+
+        const draggable = new Draggable(document.querySelectorAll('ul'), {
+            draggable: 'li'
+        });
+
+        draggable.on('drag:start', () => console.log('drag:start'));
+        draggable.on('drag:move', () => console.log('drag:move'));
+        draggable.on('drag:stop', () => console.log('drag:stop'));
+	</script>
+  </body>
 </html>
