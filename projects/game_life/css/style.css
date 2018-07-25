@@ -24,3 +24,7 @@
 #mycanvas{
 	border: ridge;
 }
+
+a {
+	float: left;
+}
