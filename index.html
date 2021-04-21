@@ -18,11 +18,6 @@
 					<h4>HELLO PEOPLE, MY NICKNAME IS</h4>
 					<h1><b>feelosophy</b></h1>
 					<h4>I'm developer from Moscow</h4>
-					<script type="text/javascript">
-						function onTelegramAuth(user) {
-							alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-						}
-					</script>
 			</div>
 	    </div>
 	</div>
@@ -83,6 +78,13 @@
 
 				<div class="col-lg-4">
 					<p>Living in Moscow.</p>
+				</div>
+				<div>
+					<script type="text/javascript">
+						function onTelegramAuth(user) {
+							alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+						}
+					</script>
 				</div>
 				<div class="col-lg-4">
 					<p>easymp2@gmail.com</p>
