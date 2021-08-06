@@ -108,7 +108,7 @@
 	    return decodeURIComponent(results[2].replace(/\+/g, ' '));
 	} 	
 
-	if (getParameterByName('downloadResume')) {
+	if (getParameterByName('downloadResume') === '1') {
 		document.getElementById('downloadResume').click();
 	}
 	</script>
